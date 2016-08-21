@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>チャットボット</title>
+        <meta name="description" content="Chat Bot" />
+        <meta name="robots" content="noindex" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link type="text/css" rel="stylesheet" href="style.css" media="screen,projection"/>
+        <script type="text/javascript" src="./jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="./jquery.xdomainajax.js"></script>
+        <script type="text/javascript" src="./chat.js"></script>
+    </head>
+    <body>
+        <div id="global-wrapper">
+            <header id="global-header">
+                <h1 class="ttl">
+                	メッセージ
+                	<label>
+	                	<input type="radio" name="dialect_flg" value="0" checked />標準
+                	</label>
+                	<label>
+	                	<input type="radio" name="dialect_flg" value="1" />方言
+                	</label>
+                </h1>
+            </header>
+
+            <div id="global-stage">
+                <div id="global-stage-inner" class="inner">
+                </div>
+            </div>
+
+            <footer id="global-footer">
+                <form id="global-footer-form" class="form">
+                    <input id="global-footer-form-txt" class="txt" type="text" />
+                    <input id="global-footer-form-btn" class="btn submit" type="submit" value="送信" />
+                </form>
+            </footer>
+        </div>
+    </body>
+</html>
